@@ -14,5 +14,6 @@ env:
   AZURE_WEBAPP_NAME: HemavathyN317-ttt-app
   #################################################
 jobs:
+if: contains(github.event.pull_request.labels.*.name, 'stage')      
   build:
     runs-on: ubuntu-latest
